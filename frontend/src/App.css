@@ -1,0 +1,186 @@
+/* رنگ‌ها و استایل‌های پایه */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fc; /* پس‌زمینه روشن‌تر */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    background-color: #007bff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px; /* گرد کردن بیشتر */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+div {
+    margin: 20px auto;
+    max-width: 900px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* سایه قوی‌تر */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+div:hover {
+    transform: translateY(-5px); /* انیمیشن شناور */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+input[type="text"] {
+    padding: 14px;
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px; /* گرد کردن بیشتر */
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff; /* تغییر رنگ مرز در حالت فوکوس */
+    outline: none;
+}
+
+input[type="button"] {
+    padding: 12px 20px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 6px; /* گرد کردن بیشتر */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+table th, table td {
+    text-align: left;
+    padding: 15px;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+table th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+table td {
+    background-color: #f9f9f9;
+}
+
+table td:hover {
+    background-color: #f1f1f1;
+}
+
+table a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+.loading {
+    text-align: center;
+    margin: 20px;
+    font-size: 18px;
+    color: #888;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.error-message {
+    color: #d9534f;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+hr {
+    border: 0;
+    border-top: 2px solid #ddd;
+    margin: 20px 0;
+}
+
+/* استایل بخش تاریخچه جستجو */
+.search-history {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #e6f7ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.search-history h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.search-history ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.search-history li {
+    padding: 10px;
+    background-color: #b3e0ff;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-history li:hover {
+    background-color: #80c7f3;
+}
+
+/* کارت اطلاعات مشتری */
+.customer-details {
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.customer-details p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.customer-details b {
+    color: #007bff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
